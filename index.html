@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Gill Sans", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("./picture/live2.gif");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+
+#landmarks, #universities, #cnn, #art {
+    scroll-margin-top: 35px; /* 调整为适合你的偏移量 */
+  }
+</style>
+
+
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div id="home"></div> 
+<div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+      <a href="#home" class="w3-bar-item w3-button">
+        <img src="./picture/logo.png" alt="Logo" style="height:40px;">
+      </a>
+      
+    <!-- Right-sided navbar links -->
+<div class="w3-right w3-hide-small">
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button">ITINERARY</a>
+    <a href="#video" class="w3-bar-item w3-button">VIDEO</a>
+  </div>
+  
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+  
+
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <div style="line-height: 1.2;">
+      <span class="w3-jumbo w3-hide-small">Ethan's London Study Tour </span><br>
+      <span class="w3-xxlarge w3-hide-large w3-hide-medium">Ethan's London Study Tour</span><br>
+      <span style="font-size: 28px;">With the School of Communication, HKBU</span>
+    </div>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Where has he been?</a></p>
+  </div> 
+</header>
+
+
+<!-- 第二屏的内容 -->
+<section id="introduction" style="padding: 60px 0; background-color: #f4f4f4;">
+  <div class="w3-container w3-center">
+    <h2>About the Study Tour</h2>
+    <p style="font-size: 18px; max-width: 800px; margin: 0 auto;">
+      In January 2025, Ethan, as an AIDMer, participated in a study tour in London, UK, alongside professors and other fellow students from the School of Communication at HKBU, lasting over ten days. <br>During the trip, Ethan not only visited historical landmarks and toured world-renowned universities, but also visited Warner and the European headquarters of CNN. It was an unforgettable experience, marking a highlight in Ethan's life as a graduate student at HKBU. 
+    </p>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- itinerary -->
+<div id="about"></div> 
+
+<div class="w3-container" style="padding:128px 16px" id="about">
+    <h3 class="w3-center">Where Has Ethan Been?</h3>
+    <p class="w3-center w3-large">Key itinerary highlights</p>
+    <div class="w3-row-padding w3-center" style="margin-top:64px">
+      <div class="w3-quarter">
+        <a href="#landmarks">
+          <img src="./picture/landmarks.png" alt="Historical Landmarks" class="w3-image w3-hover-opacity" style="width:100%">
+        </a>
+        <p class="w3-large">Historical Landmarks</p>
+        <p>See which historical landmarks<br>in London Ethan visited.</p>
+      </div>
+      <div class="w3-quarter">
+        <a href="#universities">
+          <img src="./picture/universities.png" alt="Academic Pilgrimage" class="w3-image w3-hover-opacity" style="width:100%">
+        </a>
+        <p class="w3-large">Academic Pilgrimage</p>
+        <p>Follow Ethan into<br>the world-renowned universities.</p>
+      </div>
+      <div class="w3-quarter">
+        <a href="#cnn">
+          <img src="./picture/CNN.png" alt="CNN" class="w3-image w3-hover-opacity" style="width:100%">
+        </a>
+        <p class="w3-large">CNN</p>
+        <p>Step into CNN and experience <br>the news production process.</p>
+      </div>
+      <div class="w3-quarter">
+        <a href="#art">
+          <img src="./picture/art.png" alt="Art Appreciation" class="w3-image w3-hover-opacity" style="width:100%">
+        </a>
+        <p class="w3-large">Art Appreciation</p>
+        <p>Experience London's iconic spots with Ethan.</p>
+      </div>
+    </div>
+  </div>
+  
+
+<!--landmarks-->
+
+<!-- 目标 block：Historical Landmarks -->
+<div id="landmarks"> </div>
+
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Wall with Lightbox</title>
+    <style>
+        /* 全局样式 */
+        body {
+            font-family: "Gill Sans", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        /* 主要块容器 */
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px 10%;
+            background-color: #222; /* 深色背景 */
+            color: white;
+        }
+
+        /* 照片墙 */
+        .photo-wall {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+            width: 45%;
+        }
+
+        .photo-wall img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .photo-wall img:hover {
+            transform: scale(1.05);
+        }
+
+        /* 文字内容 */
+        .text-content {
+            width: 45%;
+        }
+
+        .text-content h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .text-content p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* 弹出式大图 */
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+        }
+
+        .lightbox:target {
+            display: flex;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 30px;
+            color: white;
+            text-decoration: none;
+        }
+
+        /* 响应式布局 */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+                padding: 30px 5%;
+            }
+
+            .photo-wall {
+                width: 100%;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .text-content {
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- 照片墙和文字的主要区域 -->
+<div class="container">
+    <!-- 照片墙 -->
+    <div class="photo-wall">
+        <a href="#img1"><img src="./picture/landmarks/1.jpg" alt="Image 1"></a>
+        <a href="#img2"><img src="./picture/landmarks/2.jpg" alt="Image 2"></a>
+        <a href="#img3"><img src="./picture/landmarks/3.jpg" alt="Image 3"></a>
+        <a href="#img4"><img src="./picture/landmarks/4.jpg" alt="Image 4"></a>
+    </div>
+    
+    <!-- 文字区域 -->
+    <div class="text-content">
+        <h2>Where History Meets Modernity</h2>
+        <p>Big Ben, the iconic symbol of Britain, naturally caught my eye again and again. However, the place I visited more than once was the British Museum. <br>Since our accommodation was nearby, I loved wandering through its halls whenever I had free time. It houses a stunning collection of the world's finest artifacts. The Chinese relics on display, in particular, filled me with deep reflection and emotion.</p>
+    </div>
+</div>
+
+<!-- Lightbox 弹出大图 -->
+<div id="img1" class="lightbox">
+    <a href="#" class="lightbox-close">&times;</a>
+    <img src="./picture/landmarks/1.jpg" alt="Image 1" onclick="this.parentNode.style.display='none'">
+</div>
+<div id="img2" class="lightbox">
+    <a href="#" class="lightbox-close">&times;</a>
+    <img src="./picture/landmarks/2.jpg" alt="Image 2" onclick="this.parentNode.style.display='none'">
+</div>
+<div id="img3" class="lightbox">
+    <a href="#" class="lightbox-close">&times;</a>
+    <img src="./picture/landmarks/3.jpg" alt="Image 3" onclick="this.parentNode.style.display='none'">
+</div>
+<div id="img4" class="lightbox">
+    <a href="#" class="lightbox-close">&times;</a>
+    <img src="./picture/landmarks/4.jpg" alt="Image 4" onclick="this.parentNode.style.display='none'">
+</div>
+
+</body>
+</html>
+
+
+
+<!--university-->
+<div id="universities"> </div>
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Wall with Lightbox</title>
+    <style>
+        /* 全局样式 */
+        body {
+            font-family: "Gill Sans", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff; /* 浅色背景 */
+        }
+
+        /* 主要块容器 */
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px 10%;
+            background-color: #f5f5f5; /* 浅色背景 */
+            color: black; /* 文字颜色改为黑色 */
+        }
+
+        /* 照片墙 */
+        .photo-wall {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+            width: 45%;
+        }
+
+        .photo-wall img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .photo-wall img:hover {
+            transform: scale(1.05);
+        }
+
+        /* 文字内容 */
+        .text-content {
+            width: 45%;
+        }
+
+        .text-content h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .text-content p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* 弹出式大图 */
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+        }
+
+        .lightbox:target {
+            display: flex;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 30px;
+            color: white;
+            text-decoration: none;
+        }
+
+        /* 响应式布局 */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+                padding: 30px 5%;
+            }
+
+            .photo-wall {
+                width: 100%;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .text-content {
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- 照片墙和文字的主要区域 -->
+<div class="container">
+    <!-- 文字区域 -->
+    <div class="text-content">
+        <h2>Top Universities Steeped in History</h2>
+        <p>On this trip, I visited the University of Cambridge and the University of Oxford with two professors. I saw Newton’s apple tree, walked across the bridge immortalized in Xu Zhimo’s poetry, and passed by the Corpus Clock unveiled by Stephen Hawking, with its distinctive grasshopper. Both Cambridge and Oxford have their own versions of the Bridge of Sighs, each with a unique style. Though we were merely passing through, we could still feel the profound academic spirit that lingers in the air.</p>
+    </div>
+    
+    <!-- 照片墙 -->
+    <div class="photo-wall">
+        <a href="#img13"><img src="./picture/universities/1.jpg" alt="Image 13"></a>
+        <a href="#img14"><img src="./picture/universities/2.jpg" alt="Image 14"></a>
+        <a href="#img15"><img src="./picture/universities/3.jpg" alt="Image 15"></a>
+        <a href="#img16"><img src="./picture/universities/4.jpg" alt="Image 16"></a>
+    </div>
+</div>
+
+<!-- Lightbox 弹出大图 -->
+<div id="img13" class="lightbox">
+    <a href="#" class="lightbox-close">&times;</a>
+    <img src="./picture/universities/1.jpg" alt="Image 13" onclick="this.parentNode.style.display='none'">
+</div>
+<div id="img14" class="lightbox">
+    <a href="#" class="lightbox-close">&times;</a>
+    <img src="./picture/universities/2.jpg" alt="Image 14" onclick="this.parentNode.style.display='none'">
+</div>
+<div id="img15" class="lightbox">
+    <a href="#" class="lightbox-close">&times;</a>
+    <img src="./picture/universities/3.jpg" alt="Image 15" onclick="this.parentNode.style.display='none'">
+</div>
+<div id="img16" class="lightbox">
+    <a href="#" class="lightbox-close">&times;</a>
+    <img src="./picture/universities/4.jpg" alt="Image 16" onclick="this.parentNode.style.display='none'">
+</div>
+
+</body>
+</html>
+
+
+
+
+<!--CNN-->
+<div id="cnn"> </div>
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Wall with Lightbox</title>
+    <style>
+        /* 全局样式 */
+        body {
+            font-family: "Gill Sans", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        /* 主要块容器 */
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px 10%;
+            background-color: #222; /* 深色背景 */
+            color: white;
+        }
+
+        /* 照片墙 */
+        .photo-wall {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+            width: 45%;
+        }
+
+        .photo-wall img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .photo-wall img:hover {
+            transform: scale(1.05);
+        }
+
+        /* 文字内容 */
+        .text-content {
+            width: 45%;
+        }
+
+        .text-content h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .text-content p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* 弹出式大图 */
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+        }
+
+        .lightbox:target {
+            display: flex;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 30px;
+            color: white;
+            text-decoration: none;
+        }
+
+        /* 响应式布局 */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+                padding: 30px 5%;
+            }
+
+            .photo-wall {
+                width: 100%;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .text-content {
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- 照片墙和文字的主要区域 -->
+<div class="container">
+    <!-- 照片墙 -->
+    <div class="photo-wall">
+        <a href="#img5"><img src="./picture/CNN/1.jpg" alt="Image 5"></a>
+        <a href="#img6"><img src="./picture/CNN/3.jpg" alt="Image 6"></a>
+        <a href="#img7"><img src="./picture/CNN/5.jpg" alt="Image 7"></a>
+        <a href="#img8"><img src="./picture/CNN/4.jpg" alt="Image 8"></a>
+    </div>
+    
+    <!-- 文字区域 -->
+    <div class="text-content">
+        <h2>Storytelling, Beyond Just Media</h2>
+        <p>The three-day learning experience at CNN’s European headquarters was a key part of this study tour. We actively participated in the entire process of television news production. I was even fortunate enough to sit at the anchor desk and experience what it’s like to be a CNN news anchor. CNN Academy also invited seasoned media professionals to share their career experiences with us. It was truly an enriching and rewarding experience.
+        </p>
+    </div>
+</div>
+
+<!-- Lightbox 弹出大图 -->
+<div id="img5" class="lightbox">
+    <a href="#" class="lightbox-close">&times;</a>
+    <img src="./picture/CNN/1.jpg" alt="Image 5" onclick="this.parentNode.style.display='none'">
+</div>
+<div id="img6" class="lightbox">
+    <a href="#" class="lightbox-close">&times;</a>
+    <img src="./picture/CNN/3.jpg" alt="Image 6" onclick="this.parentNode.style.display='none'">
+</div>
+<div id="img7" class="lightbox">
+    <a href="#" class="lightbox-close">&times;</a>
+    <img src="./picture/CNN/5.jpg" alt="Image 7" onclick="this.parentNode.style.display='none'">
+</div>
+<div id="img8" class="lightbox">
+    <a href="#" class="lightbox-close">&times;</a>
+    <img src="./picture/CNN/4.jpg" alt="Image 8" onclick="this.parentNode.style.display='none'">
+</div>
+
+</body>
+</html>
+
+
+
+<!--art-->
+<div id="art"> </div>
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Wall with Lightbox</title>
+    <style>
+        /* 全局样式 */
+        body {
+            font-family: "Gill Sans", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff; /* 浅色背景 */
+        }
+
+        /* 主要块容器 */
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px 10%;
+            background-color: #f5f5f5; /* 浅色背景 */
+            color: black; /* 文字颜色改为黑色 */
+        }
+
+        /* 照片墙 */
+        .photo-wall {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+            width: 45%;
+        }
+
+        .photo-wall img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .photo-wall img:hover {
+            transform: scale(1.05);
+        }
+
+        /* 文字内容 */
+        .text-content {
+            width: 45%;
+        }
+
+        .text-content h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .text-content p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* 弹出式大图 */
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+        }
+
+        .lightbox:target {
+            display: flex;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 30px;
+            color: white;
+            text-decoration: none;
+        }
+
+        /* 响应式布局 */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+                padding: 30px 5%;
+            }
+
+            .photo-wall {
+                width: 100%;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .text-content {
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- 照片墙和文字的主要区域 -->
+<div class="container">
+    <!-- 文字区域 -->
+    <div class="text-content">
+        <h2>Following Masterpieces, Experiencing Europe</h2>
+        <p>Beyond the British Museum, I also visited the National Gallery, the V&A Museum, the Sherlock Holmes Museum, and Madame Tussauds—iconic destinations filled with European cultural IPs. What excited me the most was seeing many original masterpieces, such as Van Gogh’s paintings. Being immersed in art added a touch of elegance to this London journey.</p>
+    </div>
+    
+    <!-- 照片墙 -->
+    <div class="photo-wall">
+        <a href="#img9"><img src="./picture/art/1.JPG" alt="Image 9"></a>
+        <a href="#img10"><img src="./picture/art/2.jpg" alt="Image 10"></a>
+        <a href="#img11"><img src="./picture/art/3.jpg" alt="Image 11"></a>
+        <a href="#img12"><img src="./picture/art/5.jpg" alt="Image 12"></a>
+    </div>
+</div>
+
+<!-- Lightbox 弹出大图 -->
+<div id="img9" class="lightbox">
+    <a href="#" class="lightbox-close">&times;</a>
+    <img src="./picture/art/1.JPG" alt="Image 9" onclick="this.parentNode.style.display='none'">
+</div>
+<div id="img10" class="lightbox">
+    <a href="#" class="lightbox-close">&times;</a>
+    <img src="./picture/art/2.JPG" alt="Image 10" onclick="this.parentNode.style.display='none'">
+</div>
+<div id="img11" class="lightbox">
+    <a href="#" class="lightbox-close">&times;</a>
+    <img src="./picture/art/3.JPG" alt="Image 11" onclick="this.parentNode.style.display='none'">
+</div>
+<div id="img12" class="lightbox">
+    <a href="#" class="lightbox-close">&times;</a>
+    <img src="./picture/art/5.JPG" alt="Image 12" onclick="this.parentNode.style.display='none'">
+</div>
+
+</body>
+</html>
+
+
+
+<!-- Video Section -->
+<div id="video"></div> 
+
+<div class="w3-container w3-center" style="padding:128px 16px; background-color: #f1f1f1;">
+  <h3>Find Me！</h3>
+  <p class="w3-large">This tour also appears in the School of Communication's annual highlight video <br> See if you can spot it—at what second?</p>
+  <br>
+  <!-- YouTube Video Embed -->
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/1MVmmE8fBQc" title="HKBU School of Communication - 2024 Highlights of the Year" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+</div>
+
+<style>
+    .video-container {
+        width: 100%;  /* 让它占满整个父容器 */
+        max-width: 1200px; /* 限制最大宽度，防止太大 */
+        margin: 0 auto;  /* 水平居中 */
+        position: relative;
+        padding-top: 56.25%; /* 16:9 的视频比例 */
+    }
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* 增加底部空间 */
+    .w3-container {
+        padding-bottom: 50px; /* 添加底部空白 */
+    }
+</style>
+
+
+
+
+<!-- Footer Section -->
+<div style="text-align:center; padding:20px; background-color:#333; color:white;">
+    <a href="https://www.linkedin.com/in/ethanzhengyi" target="_blank">
+      <img src="./picture/linkedin.png" alt="LinkedIn Logo" style="width:40px; height:auto;">
+    </a>
+    <p>Finding more information about Ethan on LinkedIn</p>
+</div>
+
+
+  
